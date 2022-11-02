@@ -1,0 +1,29 @@
+***Java is required to run this app***
+***Make sure you hava Java installed on your device***
+
+To open NumberConverter run app.cmd (on Windows).  After running app script a terminal window will open with text: '"Enter number to convert and conversion type, or type 'EXIT' to terminate the program"'.  You can then write one of the available commands. NumberConverter is not case sensitive.
+
+Available commands:
+
+- 'rom'
+	convert number from decimal to roman literals
+	usage:
+		'[number] rom'
+	example:
+		'123 rom'
+	return:
+		'CXXIII'
+
+- 'hex' 
+	convert number from decimal to hexadecimal form
+	usage:
+		'[number] hex
+	example:
+		'123 hex
+	return:
+		'7b'
+	
+- 'exit'
+	terminates the programm
+	usage:
+		'exit'
