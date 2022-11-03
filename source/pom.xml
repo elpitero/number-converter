@@ -52,6 +52,14 @@
     </dependency>
 
     <dependency>
+      <groupId>com.typesafe.akka</groupId>
+      <artifactId>akka-http-testkit_2.13</artifactId>
+      <version>10.4.0</version>
+      <scope>test</scope>
+    </dependency>
+
+
+    <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>4.13.2</version>
@@ -64,6 +72,36 @@
       <version>3.2.14.0</version>
       <scope>test</scope>
     </dependency>
+
+    <dependency>
+      <groupId>com.typesafe.akka</groupId>
+      <artifactId>akka-http_2.13</artifactId>
+      <version>10.4.0</version>
+    </dependency>
+
+    <dependency>
+      <groupId>com.typesafe.akka</groupId>
+      <artifactId>akka-stream_2.13</artifactId>
+      <version>2.7.0</version>
+    </dependency>
+
+    <dependency>
+      <groupId>com.typesafe.akka</groupId>
+      <artifactId>akka-actor-typed_2.13</artifactId>
+      <version>2.7.0</version>
+    </dependency>
+
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-api</artifactId>
+      <version>2.0.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-simple</artifactId>
+      <version>2.0.0</version>
+    </dependency>
+
   </dependencies>
 
   <build>
@@ -100,7 +138,7 @@
           </descriptorRefs>
           <archive>
             <manifest>
-              <mainClass>com.example1.App</mainClass>
+              <mainClass>com.example1.ServiceMain</mainClass>
             </manifest>
           </archive>
         </configuration>
@@ -129,6 +167,8 @@
           <mainClass>com.example.Main</mainClass>
         </configuration>
       </plugin>
+
+
     </plugins>
   </build>
 </project>

@@ -1,10 +1,7 @@
-'NumberConverter' is an actor that listens to requests in form of case class:
-	-'Msg(msg: String)'  - when Msg is recevied 'NumberConverter' tries to execute conversion
-	-'Stop' - when stopp is recieved 'ActorSystem' is terminated
-
- As a reponse it sends case class:
-	- 'Res(response: String)' if conversion was sussesful
-	-'Error(error: String)' if conversion was unsuccesful or neither 'Msg' nor 'Stop' case class was sent as request
-	-'Stop' if msg == 'exit'
-
-In this app 'User' actor is communicating with NumberConverter. After receving 'Start' request it starts listening for user input. It prints all received messages in terminal.
+NumberConverter serwice supports GET request on "http://localhost:8080/numberconverter/" with parameters:
+	'n' - number that you want to convert
+	'c' - conversion type
+		supported conversion types:
+			- rom - converts to roman literals
+			- hex - converts to hexadecimal 	
+	example: http://localhost:8080/numberconverter/?n=20&c=rom results in response 'XX'
